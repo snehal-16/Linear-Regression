@@ -11,12 +11,12 @@ X_norm = (X_data - np.mean(X_data)) / np.std(X_data)
 Y_norm = (Y_data - np.mean(Y_data)) / np.std(Y_data)
 
 # Initialize parameters
-theta_0 = 0  # Intercept
-theta_1 = 0  # Slope
-learning_rate = 0.5  # Learning rate for batch gradient descent
-iterations = 1000  # Max number of iterations
-m = len(Y_norm)  # Number of data points
-convergence_threshold = 1e-6  # Convergence criteria
+theta_0 = 0  
+theta_1 = 0  
+learning_rate = 0.5 
+iterations = 1000  
+m = len(Y_norm) 
+convergence_threshold = 1e-6  
 
 # Function to compute cost
 def compute_cost(X, Y, theta_0, theta_1):
